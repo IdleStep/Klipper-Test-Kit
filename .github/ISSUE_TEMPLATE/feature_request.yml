@@ -1,0 +1,14 @@
+name: Feature request
+description: A command the simulator should act on, a lint rule or a runner option
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What you want to test
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: An example
+      description: The macro or config file, and what a test should be able to check
