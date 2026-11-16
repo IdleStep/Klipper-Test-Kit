@@ -10,6 +10,8 @@ Versions follow the public interface listed in [docs/API.md](docs/API.md).
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-11-15
+
 ### Added
 - `klipper_test_kit.Printer`, the macro simulator of Klipper-Hardware-Controls without anything
   particular to that package: `Printer(state, idle_timeout)` takes the printer's devices from its
@@ -27,3 +29,6 @@ Versions follow the public interface listed in [docs/API.md](docs/API.md).
 - Tests for each tool, for the public interface and for the package staying general, and a CI
   workflow that runs them on Jinja 2.11 and 3.1 and runs the real-firmware tests on Klipper and
   Kalico.
+
+[Unreleased]: https://github.com/IdleStep/Klipper-Test-Kit/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/IdleStep/Klipper-Test-Kit/tree/v1.0.0
