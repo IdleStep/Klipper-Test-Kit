@@ -1,0 +1,34 @@
+name: Bug report
+description: A tool gives a wrong result, raises an error, or a check misses a problem
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The tag or commit you use, and whether the firmware is Klipper or Kalico
+    validations:
+      required: true
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Tool
+      options:
+        - Printer (the simulator)
+        - config_lint
+        - klippy_batch (the real-firmware runner)
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: A minimal example
+      description: The config file or macro, the call you made and the output or error it gave
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true

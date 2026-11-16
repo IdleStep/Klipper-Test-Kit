@@ -1,0 +1,12 @@
+version: 2
+updates:
+  # Opens a pull request when a GitHub Action used by the workflows has a new version.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+  # The Jinja2 version the tests render with (requirements-test.txt).
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
